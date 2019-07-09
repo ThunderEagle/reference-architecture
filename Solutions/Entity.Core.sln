@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity.Core.Auth", "..\Core\Entity.Core.Auth\Entity.Core.Auth.csproj", "{49CE2C22-F0EB-42B1-BA89-104A9B138450}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity.Core.Settings", "..\Core\Entity.Core.Settings\Entity.Core.Settings.csproj", "{DE3F289F-61F5-43DF-AD63-1EC1719A1B78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49CE2C22-F0EB-42B1-BA89-104A9B138450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49CE2C22-F0EB-42B1-BA89-104A9B138450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49CE2C22-F0EB-42B1-BA89-104A9B138450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49CE2C22-F0EB-42B1-BA89-104A9B138450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE3F289F-61F5-43DF-AD63-1EC1719A1B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE3F289F-61F5-43DF-AD63-1EC1719A1B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE3F289F-61F5-43DF-AD63-1EC1719A1B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE3F289F-61F5-43DF-AD63-1EC1719A1B78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E674FED3-4C9A-4074-AF68-4B3CAF3CACDE}
+	EndGlobalSection
+EndGlobal
