@@ -6,7 +6,7 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entity.Core.Auth
+namespace BusinessUnit.Core.Auth
 {
 	public class AuthorizationProvider:IAuthorizationProvider
 	{

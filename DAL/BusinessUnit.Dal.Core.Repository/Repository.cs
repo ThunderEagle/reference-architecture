@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 
-namespace Entity.Dal.Core.Repository
+namespace BusinessUnit.Dal.Core.Repository
 {
     public abstract class Repository<T> : IRepository<T> where T : class
     {

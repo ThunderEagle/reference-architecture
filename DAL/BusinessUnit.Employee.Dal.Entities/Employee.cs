@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entity.Employee.Dal.Entities
+namespace BusinessUnit.Employee.Dal.Entities
 {
     public class Employee
     {

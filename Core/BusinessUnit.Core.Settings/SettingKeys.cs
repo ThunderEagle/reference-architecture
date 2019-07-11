@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entity.Core.Settings
+namespace BusinessUnit.Core.Settings
 {
 	public static class SettingKeys
 	{

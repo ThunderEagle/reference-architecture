@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq.Expressions;
 
-namespace Entity.Core.BaseObjects
+namespace BusinessUnit.Core.BaseObjects
 {
-    public abstract class SuppressibleBase:Entity.Core.BaseObjects.NotifyObject
+    public abstract class SuppressibleBase:BusinessUnit.Core.BaseObjects.NotifyObject
     {
         public bool SuppressPropertyChanges { get; set; }
 

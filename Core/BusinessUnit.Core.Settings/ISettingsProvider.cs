@@ -1,4 +1,4 @@
-﻿namespace Entity.Core.Settings {
+﻿namespace BusinessUnit.Core.Settings {
 	public interface ISettingsProvider {
 		string GetString(string key);
 		int GetInteger(string key);

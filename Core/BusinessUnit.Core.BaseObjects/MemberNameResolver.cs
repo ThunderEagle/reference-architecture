@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 
-namespace Entity.Core.BaseObjects
+namespace BusinessUnit.Core.BaseObjects
 {
     /// <summary>
     /// 	MemberNameResolver is a utility class that resolves names of members from expressions.

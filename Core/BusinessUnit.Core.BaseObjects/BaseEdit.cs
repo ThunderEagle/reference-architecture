@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Entity.Core.BaseObjects
+namespace BusinessUnit.Core.BaseObjects
 {
     public abstract class BaseEdit:SuppressibleBase
     {

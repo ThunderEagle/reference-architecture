@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Data;
 using System.Reflection;
 using Dapper;
-using Entity.Dal.Core.Repository;
+using BusinessUnit.Dal.Core.Repository;
 
-namespace Entity.Employee.Dal.Repository
+namespace BusinessUnit.Employee.Dal.Repository
 {
     public class EmployeeRepository:Repository<Entities.Employee>
     {

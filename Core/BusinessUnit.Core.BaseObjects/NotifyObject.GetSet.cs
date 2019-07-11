@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Entity.Core.BaseObjects
+namespace BusinessUnit.Core.BaseObjects
 {
 public abstract partial class NotifyObject
 	{

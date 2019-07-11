@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Entity.Dal.Core.Repository
+namespace BusinessUnit.Dal.Core.Repository
 {
     public interface IRepository<T> where T : class
     {

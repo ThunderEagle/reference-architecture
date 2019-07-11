@@ -1,4 +1,4 @@
-﻿namespace Entity.Employee.UI
+﻿namespace BusinessUnit.Employee.UI
 {
     partial class EmployeeProfile
     {

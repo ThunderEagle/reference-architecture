@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Reflection;
 
-namespace Entity.Core.BaseObjects
+namespace BusinessUnit.Core.BaseObjects
 {
 	/// <summary>
 	/// Abstract class that assists in implementing the INotifyProperyChanged interface for objects.

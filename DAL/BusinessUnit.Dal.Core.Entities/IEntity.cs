@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entity.Dal.Core.Entities
+namespace BusinessUnit.Dal.Core.Entities
 {
     public interface IEntity
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Entity.Employee.UI
+namespace BusinessUnit.Employee.UI
 {
     public partial class EmployeeProfile : Form
     {

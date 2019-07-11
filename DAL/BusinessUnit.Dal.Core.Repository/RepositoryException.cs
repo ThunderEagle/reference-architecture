@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entity.Dal.Core.Repository
+namespace BusinessUnit.Dal.Core.Repository
 {
     public class RepositoryException:Exception
     {

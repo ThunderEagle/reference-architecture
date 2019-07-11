@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Entity.Dal.Core
+namespace BusinessUnit.Dal.Core
 {
     public class ConnectionProvider
     {
