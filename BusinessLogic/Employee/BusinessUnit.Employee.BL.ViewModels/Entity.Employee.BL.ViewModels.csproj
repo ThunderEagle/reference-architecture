@@ -7,8 +7,8 @@
     <ProjectGuid>{1F579CAB-E5D7-4460-99DC-BEA74934536D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Entity.Employee.BL.ViewModels</RootNamespace>
-    <AssemblyName>Entity.Employee.BL.ViewModels</AssemblyName>
+    <RootNamespace>BusinessUnit.Employee.BL.ViewModels</RootNamespace>
+    <AssemblyName>BusinessUnit.Employee.BL.ViewModels</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

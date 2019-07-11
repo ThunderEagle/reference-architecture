@@ -7,8 +7,8 @@
     <ProjectGuid>{E27CF62F-0066-4B6F-903F-E7A80DE11810}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Entity.Core.BaseObjects</RootNamespace>
-    <AssemblyName>Entity.Core.BaseObjects</AssemblyName>
+    <RootNamespace>BusinessUnit.Core.BaseObjects</RootNamespace>
+    <AssemblyName>BusinessUnit.Core.BaseObjects</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

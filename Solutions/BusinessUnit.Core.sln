@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity.Core.Auth", "..\Core\Entity.Core.Auth\Entity.Core.Auth.csproj", "{49CE2C22-F0EB-42B1-BA89-104A9B138450}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessUnit.Core.Auth", "..\Core\BusinessUnit.Core.Auth\BusinessUnit.Core.Auth.csproj", "{49CE2C22-F0EB-42B1-BA89-104A9B138450}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity.Core.Settings", "..\Core\Entity.Core.Settings\Entity.Core.Settings.csproj", "{DE3F289F-61F5-43DF-AD63-1EC1719A1B78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessUnit.Core.Settings", "..\Core\BusinessUnit.Core.Settings\BusinessUnit.Core.Settings.csproj", "{DE3F289F-61F5-43DF-AD63-1EC1719A1B78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity.Core.BaseObjects", "..\Core\Entity.Core.BaseObjects\Entity.Core.BaseObjects.csproj", "{E27CF62F-0066-4B6F-903F-E7A80DE11810}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessUnit.Core.BaseObjects", "..\Core\BusinessUnit.Core.BaseObjects\BusinessUnit.Core.BaseObjects.csproj", "{E27CF62F-0066-4B6F-903F-E7A80DE11810}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

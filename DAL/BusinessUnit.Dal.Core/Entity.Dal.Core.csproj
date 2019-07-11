@@ -7,8 +7,8 @@
     <ProjectGuid>{7D0D580F-1F12-47D2-BCEC-9EEEFA7EAB0F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Entity.Dal.Core</RootNamespace>
-    <AssemblyName>Entity.Dal.Core</AssemblyName>
+    <RootNamespace>BusinessUnit.Dal.Core</RootNamespace>
+    <AssemblyName>BusinessUnit.Dal.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

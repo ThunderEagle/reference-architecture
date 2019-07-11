@@ -7,8 +7,8 @@
     <ProjectGuid>{458FDD73-35EE-4E4F-86E8-848D5C3B9A3C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Entity.Employee.Dal.Repository</RootNamespace>
-    <AssemblyName>Entity.Employee.Dal.Repository</AssemblyName>
+    <RootNamespace>BusinessUnit.Employee.Dal.Repository</RootNamespace>
+    <AssemblyName>BusinessUnit.Employee.Dal.Repository</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -35,9 +35,9 @@
     <Reference Include="Dapper, Version=1.60.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\Solutions\packages\Dapper.1.60.6\lib\net451\Dapper.dll</HintPath>
     </Reference>
-    <Reference Include="Entity.Dal.Core.Repository, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="BusinessUnit.Dal.Core.Repository, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\Entity.Dal.Core.Repository.dll</HintPath>
+      <HintPath>..\bin\BusinessUnit.Dal.Core.Repository.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Entity.Employee.Dal.Entities\Entity.Employee.Dal.Entities.csproj">
+    <ProjectReference Include="..\BusinessUnit.Employee.Dal.Entities\BusinessUnit.Employee.Dal.Entities.csproj">
       <Project>{9e060423-54ae-4599-bbfe-a35474e1e05b}</Project>
-      <Name>Entity.Employee.Dal.Entities</Name>
+      <Name>BusinessUnit.Employee.Dal.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -7,8 +7,8 @@
     <ProjectGuid>{BADC3C13-46BA-4CAD-B799-642B232E0463}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Entity.Employee.UI</RootNamespace>
-    <AssemblyName>Entity.Employee.UI</AssemblyName>
+    <RootNamespace>BusinessUnit.Employee.UI</RootNamespace>
+    <AssemblyName>BusinessUnit.Employee.UI</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

@@ -7,8 +7,8 @@
     <ProjectGuid>{49CE2C22-F0EB-42B1-BA89-104A9B138450}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Entity.Core.Auth</RootNamespace>
-    <AssemblyName>Entity.Core.Auth</AssemblyName>
+    <RootNamespace>BusinessUnit.Core.Auth</RootNamespace>
+    <AssemblyName>BusinessUnit.Core.Auth</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

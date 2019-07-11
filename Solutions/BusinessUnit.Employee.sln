@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity.Employee.Dal.Entities", "..\DAL\Entity.Employee.Dal.Entities\Entity.Employee.Dal.Entities.csproj", "{9E060423-54AE-4599-BBFE-A35474E1E05B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessUnit.Employee.Dal.Entities", "..\DAL\BusinessUnit.Employee.Dal.Entities\BusinessUnit.Employee.Dal.Entities.csproj", "{9E060423-54AE-4599-BBFE-A35474E1E05B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity.Employee.Dal.Repository", "..\DAL\Entity.Employee.Dal.Repository\Entity.Employee.Dal.Repository.csproj", "{458FDD73-35EE-4E4F-86E8-848D5C3B9A3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessUnit.Employee.Dal.Repository", "..\DAL\BusinessUnit.Employee.Dal.Repository\BusinessUnit.Employee.Dal.Repository.csproj", "{458FDD73-35EE-4E4F-86E8-848D5C3B9A3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity.Employee.UI", "..\UI\Employee\Entity.Employee.UI\Entity.Employee.UI.csproj", "{BADC3C13-46BA-4CAD-B799-642B232E0463}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessUnit.Employee.UI", "..\UI\Employee\BusinessUnit.Employee.UI\BusinessUnit.Employee.UI.csproj", "{BADC3C13-46BA-4CAD-B799-642B232E0463}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity.Employee.BL.ViewModels", "..\BusinessLogic\Employee\Entity.Employee.BL.ViewModels\Entity.Employee.BL.ViewModels.csproj", "{1F579CAB-E5D7-4460-99DC-BEA74934536D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessUnit.Employee.BL.ViewModels", "..\BusinessLogic\Employee\BusinessUnit.Employee.BL.ViewModels\BusinessUnit.Employee.BL.ViewModels.csproj", "{1F579CAB-E5D7-4460-99DC-BEA74934536D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

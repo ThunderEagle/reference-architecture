@@ -7,8 +7,8 @@
     <ProjectGuid>{DE3F289F-61F5-43DF-AD63-1EC1719A1B78}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Entity.Core.Settings</RootNamespace>
-    <AssemblyName>Entity.Core.Settings</AssemblyName>
+    <RootNamespace>BusinessUnit.Core.Settings</RootNamespace>
+    <AssemblyName>BusinessUnit.Core.Settings</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
