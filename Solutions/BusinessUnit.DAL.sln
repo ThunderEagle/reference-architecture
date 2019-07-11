@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity.Dal.Core", "..\DAL\E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity.Dal.Core.Repository", "..\DAL\Entity.Dal.Core.Repository\Entity.Dal.Core.Repository.csproj", "{834C8E7B-A818-4396-B027-651C5C795DBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity.Dal.Core.Entities", "..\DAL\Entity.Dal.Core.Entities\Entity.Dal.Core.Entities.csproj", "{F37504FD-2652-48DF-AF16-56DCCDFF9EEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{834C8E7B-A818-4396-B027-651C5C795DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{834C8E7B-A818-4396-B027-651C5C795DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{834C8E7B-A818-4396-B027-651C5C795DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F37504FD-2652-48DF-AF16-56DCCDFF9EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F37504FD-2652-48DF-AF16-56DCCDFF9EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F37504FD-2652-48DF-AF16-56DCCDFF9EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F37504FD-2652-48DF-AF16-56DCCDFF9EEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

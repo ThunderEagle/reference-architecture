@@ -1,42 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Entity.Dal.Core.Repository
 {
-	public class Repository<T>:IRepository<T> where T : class
-	{
-		private readonly Func<IDbConnection> _connectionFactory;
+    public abstract class Repository<T> : IRepository<T> where T : class
+    {
 
-		public Repository(Func<IDbConnection> connectionFactory)
-		{
-			_connectionFactory = connectionFactory;
-		}
+        protected Repository(Func<IDbConnection> connectionFactory)
+        {
+            ConnectionFactory = connectionFactory;
+        }
 
+        protected Func<IDbConnection> ConnectionFactory { get;  }
 
-		public IEnumerable<T> List => throw new NotImplementedException();
+        public abstract IEnumerable<T> List { get; }
 
-		public void Add(T entity)
-		{
-			throw new NotImplementedException();
-		}
+        public abstract int Add(T entity);
 
-		public void Delete(T entity)
-		{
-			throw new NotImplementedException();
-		}
+        public abstract void Delete(T entity);
 
-		public T Get(int id)
-		{
-			throw new NotImplementedException();
-		}
+        public abstract T Get(int id);
 
-		public void Update(T entity)
-		{
-			throw new NotImplementedException();
-		}
-	}
+        public abstract void Update(T entity);
+    }
 }
