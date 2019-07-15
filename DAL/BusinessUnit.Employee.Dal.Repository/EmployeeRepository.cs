@@ -1,16 +1,20 @@
-﻿using System;
+﻿using BusinessUnit.Dal.Core.Repository;
+using Dapper;
+using System;
 using System.Collections.Generic;
+using System.Composition;
 using System.Data;
 using System.Reflection;
-using Dapper;
-using BusinessUnit.Dal.Core.Repository;
+using BusinessUnit.Dal.Core;
 
 namespace BusinessUnit.Employee.Dal.Repository
 {
-    public class EmployeeRepository:Repository<Entities.Employee>
+    [Export(typeof(IEmployeeRepository))]
+    public class EmployeeRepository : Repository<Entities.Employee>, IEmployeeRepository
     {
-        public EmployeeRepository(Func<IDbConnection> connectionFactory)
-            :base(connectionFactory) { }
+        [ImportingConstructor]
+        public EmployeeRepository(IConnectionProvider connectionProvider)
+            : base(connectionProvider) { }
 
         public override int Add(Entities.Employee entity)
         {
@@ -18,17 +22,17 @@ namespace BusinessUnit.Employee.Dal.Repository
             {
                 var sql = "INSERT INTO Employees (LastName, FirstName, BirthDate) VALUES (@LastName, @FirstName, @BirthDate)";
                 var parms = new DynamicParameters(new { entity.LastName, entity.FirstName, entity.BirthDate });
-                using(var cn = ConnectionFactory.Invoke())
+                using (var cn = ConnectionFactory.Invoke())
                 {
                     var key = cn.ExecuteScalar<int>(sql, parms);
                     return key;
                 }
             }
-            catch(RepositoryException)
+            catch (RepositoryException)
             {
                 throw;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw new RepositoryException(MethodBase.GetCurrentMethod(), e);
             }
@@ -40,16 +44,16 @@ namespace BusinessUnit.Employee.Dal.Repository
             {
                 var sql = "DELETE FROM Employees where EmployeeID = @EmployeeID";
                 var parms = new DynamicParameters(new { entity.EmployeeID });
-                using(var cn = ConnectionFactory.Invoke())
+                using (var cn = ConnectionFactory.Invoke())
                 {
                     cn.Execute(sql, parms);
                 }
             }
-            catch(RepositoryException)
+            catch (RepositoryException)
             {
                 throw;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw new RepositoryException(MethodBase.GetCurrentMethod(), e);
             }
@@ -61,16 +65,16 @@ namespace BusinessUnit.Employee.Dal.Repository
             {
                 var sql = "UPDATE Employees LastName = @LastName, FirstName = @FirstName, BirthDate = @BirthDate WHERE EmployeeID = @EmployeeID";
                 var parms = new DynamicParameters(new { entity.LastName, entity.FirstName, entity.BirthDate, entity.EmployeeID });
-                using(var cn = ConnectionFactory.Invoke())
+                using (var cn = ConnectionFactory.Invoke())
                 {
                     var rowCount = cn.Execute(sql, parms);
                 }
             }
-            catch(RepositoryException)
+            catch (RepositoryException)
             {
                 throw;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw new RepositoryException(MethodBase.GetCurrentMethod(), e);
             }
@@ -83,16 +87,16 @@ namespace BusinessUnit.Employee.Dal.Repository
                 try
                 {
                     var sql = "SELECT * FROM Employees";
-                    using(var cn = ConnectionFactory.Invoke())
+                    using (var cn = ConnectionFactory.Invoke())
                     {
                         return cn.Query<Entities.Employee>(sql);
                     }
                 }
-                catch(RepositoryException)
+                catch (RepositoryException)
                 {
                     throw;
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     throw new RepositoryException(MethodBase.GetCurrentMethod(), e);
                 }
@@ -106,16 +110,16 @@ namespace BusinessUnit.Employee.Dal.Repository
                 var parms = new DynamicParameters(new { id });
                 var sql = "SELECT EmployeeID, LastName, FirstName, BirthDate FROM Employees WHERE EmployeeID = @id";
 
-                using(var cn = ConnectionFactory.Invoke())
+                using (var cn = ConnectionFactory.Invoke())
                 {
                     return cn.QuerySingleOrDefault<Entities.Employee>(sql, parms);
                 }
             }
-            catch(RepositoryException)
+            catch (RepositoryException)
             {
                 throw;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw new RepositoryException(MethodBase.GetCurrentMethod(), e);
             }

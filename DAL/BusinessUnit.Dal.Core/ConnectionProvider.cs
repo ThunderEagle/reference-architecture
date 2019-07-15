@@ -1,10 +1,12 @@
 ﻿
+using System.Composition;
 using System.Data;
 using System.Data.SqlClient;
 
 namespace BusinessUnit.Dal.Core
 {
-    public class ConnectionProvider
+    [Export(typeof(IConnectionProvider))]
+    public class ConnectionProvider : IConnectionProvider
     {
         public virtual IDbConnection GetConnection()
         {

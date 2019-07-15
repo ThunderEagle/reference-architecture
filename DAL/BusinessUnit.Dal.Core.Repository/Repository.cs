@@ -7,9 +7,9 @@ namespace BusinessUnit.Dal.Core.Repository
     public abstract class Repository<T> : IRepository<T> where T : class
     {
 
-        protected Repository(Func<IDbConnection> connectionFactory)
+        protected Repository(IConnectionProvider connectionProvider)
         {
-            ConnectionFactory = connectionFactory;
+            ConnectionFactory = connectionProvider.GetConnection;
         }
 
         protected Func<IDbConnection> ConnectionFactory { get;  }

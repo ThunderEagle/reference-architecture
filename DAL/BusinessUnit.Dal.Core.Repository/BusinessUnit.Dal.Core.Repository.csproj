@@ -56,6 +56,10 @@
       <Project>{f37504fd-2652-48df-af16-56dccdff9eea}</Project>
       <Name>BusinessUnit.Dal.Core.Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BusinessUnit.Dal.Core\BusinessUnit.Dal.Core.csproj">
+      <Project>{7d0d580f-1f12-47d2-bcec-9eeefa7eab0f}</Project>
+      <Name>BusinessUnit.Dal.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
