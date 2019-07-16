@@ -1,14 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
-    <AssemblyTitle>BusinessUnit.Dal.Core.Entities</AssemblyTitle>
-    <Product>BusinessUnit.Dal.Core.Entities</Product>
+    <AssemblyTitle>BusinessUnit.Core.BaseObjects.Tests</AssemblyTitle>
+    <Product>BusinessUnit.Core.BaseObjects.Tests</Product>
     <Copyright>Copyright ©  2019</Copyright>
-    <OutputPath>..\bin\</OutputPath>
+    <OutputPath>..\Bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.*" />
     <PackageReference Include="Microsoft.CSharp" Version="4.*" />
     <PackageReference Include="System.Net.Http" Version="4.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="2.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessUnit.Core.BaseObjects\BusinessUnit.Core.BaseObjects.csproj" />
   </ItemGroup>
 </Project>
