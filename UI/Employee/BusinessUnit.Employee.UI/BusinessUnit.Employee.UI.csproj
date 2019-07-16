@@ -1,25 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+<Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.0.1" />
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
     <AssemblyTitle>BusinessUnit.Employee.UI</AssemblyTitle>
     <Product>BusinessUnit.Employee.UI</Product>
     <Copyright>Copyright ©  2019</Copyright>
-    <OutputPath>..\..\bin\</OutputPath>
+    <OutDir>..\..\bin\</OutDir>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="System.Data.DataSetExtensions" Version="4.*" />
-    <PackageReference Include="Microsoft.CSharp" Version="4.*" />
-    <PackageReference Include="System.Net.Http" Version="4.*" />
+    <PackageReference Include="System.Data.DataSetExtensions"  />
+    <PackageReference Include="Microsoft.CSharp"  />
+    <PackageReference Include="System.Net.Http"  />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Composition" Version="1.0.31" />
-    <PackageReference Include="System.Composition" Version="1.0.31" />
-    <PackageReference Include="System.Composition.AttributedModel" Version="1.0.31" />
-    <PackageReference Include="System.Composition.Convention" Version="1.0.31" />
-    <PackageReference Include="System.Composition.Hosting" Version="1.0.31" />
-    <PackageReference Include="System.Composition.Runtime" Version="1.0.31" />
-    <PackageReference Include="System.Composition.TypedParts" Version="1.0.31" />
-  </ItemGroup>
+        <PackageReference Include="Microsoft.Composition" />
+        <PackageReference Include="System.Composition" />
+        <PackageReference Include="System.Composition.AttributedModel"  />
+        <PackageReference Include="System.Composition.Convention"  />
+        <PackageReference Include="System.Composition.Hosting"  />
+        <PackageReference Include="System.Composition.Runtime" />
+        <PackageReference Include="System.Composition.TypedParts"/>
+    </ItemGroup>
   <ItemGroup>
     <Reference Include="BusinessUnit.Core.BaseObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\Core\Bin\BusinessUnit.Core.BaseObjects.dll</HintPath>
@@ -27,21 +28,9 @@
     </Reference>
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Update="EmployeeProfile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="EmployeeProfile.Designer.cs">
-      <DependentUpon>EmployeeProfile.cs</DependentUpon>
-    </Compile>
-  </ItemGroup>
+  
   <ItemGroup>
     <None Include="Properties\DataSources\BusinessUnit.Employee.BL.ViewModels.EmployeeProfileVM.datasource" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Update="EmployeeProfile.resx">
-      <DependentUpon>EmployeeProfile.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\BusinessLogic\Employee\BusinessUnit.Employee.BL.ViewModels\BusinessUnit.Employee.BL.ViewModels.csproj" />

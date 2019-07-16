@@ -1,14 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+<Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.0.1" />
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
     <AssemblyTitle>BusinessUnit.Dal.Core.Entities</AssemblyTitle>
     <Product>BusinessUnit.Dal.Core.Entities</Product>
     <Copyright>Copyright ©  2019</Copyright>
-    <OutputPath>..\bin\</OutputPath>
+    <OutDir>..\bin\</OutDir>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="System.Data.DataSetExtensions" Version="4.*" />
-    <PackageReference Include="Microsoft.CSharp" Version="4.*" />
-    <PackageReference Include="System.Net.Http" Version="4.*" />
+    <PackageReference Include="System.Data.DataSetExtensions"  />
+    <PackageReference Include="Microsoft.CSharp"  />
+    <PackageReference Include="System.Net.Http"  />
   </ItemGroup>
 </Project>

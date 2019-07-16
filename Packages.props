@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <!-- <ItemGroup>
+        <PackageReference Update="Microsoft.Composition" Version="1.0.31" />
+        <PackageReference Update="System.Composition" Version="1.0.31" />
+        <PackageReference Update="System.Composition.AttributedModel" Version="1.0.31" />
+        <PackageReference Update="System.Composition.Convention" Version="1.0.31" />
+        <PackageReference Update="System.Composition.Hosting" Version="1.0.31" />
+        <PackageReference Update="System.Composition.Runtime" Version="1.0.31" />
+        <PackageReference Update="System.Composition.TypedParts" Version="1.0.31" />
+    </ItemGroup> -->
+  <ItemGroup>
+    <PackageReference Update="NUnit" Version="2.6.3" />
+    <PackageReference Update="Dapper" Version="1.60.6" />
+    <PackageReference Update="System.Data.DataSetExtensions" Version="4.*" />
+    <PackageReference Update="Microsoft.CSharp" Version="4.*" />
+    <PackageReference Update="System.Net.Http" Version="4.*" />
+    <PackageReference Update="Microsoft.Composition" Version="1.0.31" />
+    <PackageReference Update="System.Composition" Version="1.0.31" />
+    <PackageReference Update="System.Composition.AttributedModel" Version="1.0.31" />
+    <PackageReference Update="System.Composition.Convention" Version="1.0.31" />
+    <PackageReference Update="System.Composition.Hosting" Version="1.0.31" />
+    <PackageReference Update="System.Composition.Runtime" Version="1.0.31" />
+    <PackageReference Update="System.Composition.TypedParts" Version="1.0.31" />
+
+  </ItemGroup>
+</Project>

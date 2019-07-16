@@ -1,23 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+<Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.0.1" />
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
     <AssemblyTitle>BusinessUnit.Core.Settings</AssemblyTitle>
     <Product>BusinessUnit.Core.Settings</Product>
     <Copyright>Copyright ©  2019</Copyright>
-    <OutputPath>..\Bin\</OutputPath>
+    <OutDir>..\Bin\</OutDir>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="System.Data.DataSetExtensions" Version="4.*" />
-    <PackageReference Include="Microsoft.CSharp" Version="4.*" />
-    <PackageReference Include="System.Net.Http" Version="4.*" />
+    <PackageReference Include="System.Data.DataSetExtensions"  />
+    <PackageReference Include="Microsoft.CSharp"  />
+    <PackageReference Include="System.Net.Http"  />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Composition" Version="1.0.31" />
-    <PackageReference Include="System.Composition" Version="1.0.31" />
-    <PackageReference Include="System.Composition.AttributedModel" Version="1.0.31" />
-    <PackageReference Include="System.Composition.Convention" Version="1.0.31" />
-    <PackageReference Include="System.Composition.Hosting" Version="1.0.31" />
-    <PackageReference Include="System.Composition.Runtime" Version="1.0.31" />
-    <PackageReference Include="System.Composition.TypedParts" Version="1.0.31" />
-  </ItemGroup>
+ <ItemGroup>
+        <PackageReference Include="Microsoft.Composition" />
+        <PackageReference Include="System.Composition" />
+        <PackageReference Include="System.Composition.AttributedModel"  />
+        <PackageReference Include="System.Composition.Convention"  />
+        <PackageReference Include="System.Composition.Hosting"  />
+        <PackageReference Include="System.Composition.Runtime" />
+        <PackageReference Include="System.Composition.TypedParts"/>
+    </ItemGroup>
 </Project>
