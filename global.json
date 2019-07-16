@@ -1,0 +1,13 @@
+{
+  "sdk": {
+    "version": "2.2.301"
+  },
+
+  "msbuild-sdks": {
+    "MSBuild.Sdk.Extras" : "2.0.31",
+    "Microsoft.Build.Traversal" : "2.0.12",
+    "Microsoft.Build.CentralPackageVersions" : "2.0.46",
+    "Microsoft.Build.Artifacts" : "2.0.1",
+    "Microsoft.Build.NoTargets" : "1.0.80"
+  }
+}
