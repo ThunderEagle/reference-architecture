@@ -1,1 +1,1 @@
-Get-ChildItem -inc bin,obj -rec | Remove-Item -rec -force
+Get-ChildItem  * -inc bin,Debug, obj -rec | Remove-Item -rec -force
