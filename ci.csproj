@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.Build.Traversal/2.0.12">
-<ItemGroup>
+<!-- <ItemGroup>
   <PackageReference Include="Microsoft.Build.Artifacts" Version="2.0.1" />
   <PackageReference Include="MSBuild.Sdk.Extras" Version="2.0.31" />
   <PackageReference Include="Microsoft.Build.CentralPackageVersions" Version="2.0.46" />
@@ -9,7 +9,7 @@
   <PropertyGroup>
     <TargetFramework>net46</TargetFramework>
     <ArtifactsPath>.\MyApp</ArtifactsPath>
-  </PropertyGroup>
+  </PropertyGroup> -->
   <ItemGroup>
     <ProjectReference Include="core\**\*.*proj" />
     <ProjectReference Include="DAL\**\*.*proj" />
