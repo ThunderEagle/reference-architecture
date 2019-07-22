@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" Name="Profiles.Setup" Language="1033" Version="1.0.0.0" Manufacturer="" UpgradeCode="30adc917-12b9-4a7f-82c3-4803645e3a91">
+	<Product Id="*" Name="Profiles.Setup" Language="1033" Version="1.0.0.0" Manufacturer="Trimble Transportation Enterprise" UpgradeCode="30adc917-12b9-4a7f-82c3-4803645e3a91">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
@@ -19,12 +19,4 @@
 		</Directory>
 	</Fragment>
 
-	<Fragment>
-		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
-			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
-			<!-- <Component Id="ProductComponent"> -->
-				<!-- TODO: Insert files, registry keys, and other resources here. -->
-			<!-- </Component> -->
-		</ComponentGroup>
-	</Fragment>
 </Wix>
