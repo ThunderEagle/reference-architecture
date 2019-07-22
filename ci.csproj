@@ -6,5 +6,6 @@
     <ProjectReference Include="UI\**\*.*proj" />
     <ProjectReference Include="BusinessLogic\**\*.*proj" />
     <ProjectReference Include="AppShell\**\*.*proj" />
+    <ProjectReference Include="WiX\**\*.*proj" />
   </ItemGroup>
 </Project>

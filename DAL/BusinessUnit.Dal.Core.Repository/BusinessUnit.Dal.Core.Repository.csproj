@@ -5,11 +5,9 @@
     <AssemblyTitle>BusinessUnit.Dal.Core.Repository</AssemblyTitle>
     <Product>BusinessUnit.Dal.Core.Repository</Product>
     <Copyright>Copyright ©  2019</Copyright>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutDir>..\bin\</OutDir>
   </PropertyGroup>
-  <ItemGroup>
+    <ItemGroup>
     <PackageReference Include="System.Data.DataSetExtensions"  />
     <PackageReference Include="Microsoft.CSharp"  />
     <PackageReference Include="System.Net.Http"  />

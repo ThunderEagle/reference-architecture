@@ -10,6 +10,7 @@
     <OutputName>Profiles.Setup</OutputName>
     <OutputType>Package</OutputType>
     <DefineConstants>ItemDir=..\..\AppShell\Bin</DefineConstants>
+    <DefineSolutionProperties>false</DefineSolutionProperties>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
