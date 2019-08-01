@@ -17,10 +17,8 @@ namespace BusinessUnit.Application.Profiles
         {
             System.Windows.Forms.Application.EnableVisualStyles();
             System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
-            //TODO why does MainForm not resolve?
-            //var container = IoC.Instance.Container;
-            //var mainForm = container.GetExport<MainForm>();
-            var mainForm = new MainForm();
+            var container = IoC.Instance.Container;
+            var mainForm = container.GetExport<MainForm>();
             System.Windows.Forms.Application.Run(mainForm);
         }
     }

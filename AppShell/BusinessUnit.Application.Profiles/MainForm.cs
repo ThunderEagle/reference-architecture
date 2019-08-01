@@ -10,18 +10,21 @@ namespace BusinessUnit.Application.Profiles
     [Export(typeof(MainForm))]
     public partial class MainForm : Form
     {
-        public MainForm()
+        [ImportingConstructor]
+        public MainForm(EmployeeProfile employeeProfile)
         {
             InitializeComponent();
+            EmployeeProfileForm = employeeProfile;
             exitToolStripMenuItem.Click += ExitToolStripMenuItem_Click;
             employeeProfileToolStripMenuItem.Click += EmployeeProfileToolStripMenuItem_Click;
         }
 
+        private EmployeeProfile EmployeeProfileForm { get; }
+
         private void EmployeeProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var employeeProfile = IoC.Instance.Container.GetExport<EmployeeProfile>();
-            employeeProfile.MdiParent = this;
-            employeeProfile.Show();
+            EmployeeProfileForm.MdiParent = this;
+            EmployeeProfileForm.Show();
         }
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)

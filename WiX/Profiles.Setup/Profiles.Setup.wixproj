@@ -9,7 +9,6 @@
     <SchemaVersion>2.0</SchemaVersion>
     <OutputName>Profiles.Setup</OutputName>
     <OutputType>Package</OutputType>
-    <DefineConstants>ItemDir=..\..\AppShell\Bin</DefineConstants>
     <DefineSolutionProperties>false</DefineSolutionProperties>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -20,6 +19,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <DefineConstants>ItemDir=..\..\AppShell\Bin</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Product.wxs" />
@@ -53,6 +53,7 @@
       <SuppressRootDirectory>True</SuppressRootDirectory>
       <DirectoryRefId>INSTALLFOLDER</DirectoryRefId>
       <ComponentGroupName>ProductComponents</ComponentGroupName>
+      <Transforms>..\Transforms\ExcludePDB.xsl</Transforms>
       <PreprocessorVariable>var.ItemDir</PreprocessorVariable>
     </HarvestDirectory>
   </ItemGroup>

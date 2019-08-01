@@ -39,7 +39,9 @@ namespace BusinessUnit.Core.IoC
 
         private CompositionHost CreateContainer()
         {
-            var currentAssembly = Assembly.GetExecutingAssembly();
+            //var exeAssembly = Assembly.GetEntryAssembly();
+
+            var currentAssembly = Assembly.GetEntryAssembly();
             var directory = Path.GetDirectoryName(currentAssembly.Location);
 
 
